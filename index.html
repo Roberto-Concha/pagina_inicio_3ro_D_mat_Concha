@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Tómala Ya! - Helados Artesanales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="LOGO HELADO.png" alt="Logo ¡Tómala Ya!" class="logo">
+        </div>
+        <nav class="nav">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#nosotros" class="nav-link">Nosotros</a>
+            <a href="#trabaja" class="nav-link">Trabaja con nosotros</a>
+            <a href="#logros" class="nav-link">Logros</a>
+            <a href="#contactanos" class="nav-link">Contáctanos</a>
+        </nav>
+        <div class="cta-container">
+            <a href="#" class="btn-pedido">Haz tu pedido</a>
+        </div>
+    </header>
+
+    <main class="hero-wrapper">
+        <div class="slider-container" id="slider-track">
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="reveal-text text-1">Disfruta sin duda,</span>
+                <span class="reveal-text text-2 highlight">¡PRUÉBALO YA!</span>
+            </h1>
+        </div>
+    </main>
+
+    <!-- SECCIÓN: NOVEDADES (VIDEOS) -->
+    <section class="novedades-section">
+        <h2 class="novedades-title">Novedades</h2>
+        <div class="videos-container">
+            <div class="video-card video-1">
+                <video src="video/CHICA_HELADO.mp4" autoplay loop muted playsinline></video>
+            </div>
+            <div class="video-card video-2">
+                <video src="video/HELADO_CHOCOLATE.mp4" autoplay loop muted playsinline></video>
+            </div>
+            <div class="video-card video-3">
+                <video src="video/HELADO_DERRETIDO.mp4" autoplay loop muted playsinline></video>
+            </div>
+        </div>
+        <div class="btn-siguenos-container">
+            <a href="#" class="btn-siguenos">Síguenos</a>
+        </div>
+    </section>
+
+    <!-- NUEVA SECCIÓN: NUESTRAS LÍNEAS (IMÁGENES 3D CON CLIC) -->
+    <section class="lineas-section">
+        <h2 class="lineas-title">Nuestras <span>Líneas</span></h2>
+        
+        <div class="lineas-container">
+            <!-- Tarjeta 1 -->
+            <div class="linea-card" data-linea="helado">
+                <div class="card-inner">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?q=80&w=600" alt="Helado Artesanal">
+                </div>
+                <h3>Helado Artesanal</h3>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="linea-card" data-linea="cafeteria">
+                <div class="card-inner">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=600" alt="Cafetería">
+                </div>
+                <h3>Cafetería</h3>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="linea-card" data-linea="pasteleria">
+                <div class="card-inner">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600" alt="Pastelería">
+                </div>
+                <h3>Pastelería</h3>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="linea-card" data-linea="soft">
+                <div class="card-inner">
+                    <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?q=80&w=600" alt="Helados Soft">
+                </div>
+                <h3>Helados Soft</h3>
+            </div>
+        </div>
+
+        <div class="btn-pedido-container">
+            <a href="#" class="btn-haz-pedido-lineas">HaZ tu Pedido</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN: RESEÑAS Y TESTIMONIOS -->
+    <section class="reviews-section" id="reviews-section">
+        <button class="review-arrow arrow-left" id="prev-review" aria-label="Reseña anterior">&#10094;</button>
+        <button class="review-arrow arrow-right" id="next-review" aria-label="Siguiente reseña">&#10095;</button>
+
+        <div class="review-card" id="review-card">
+            <div class="review-header">
+                <div class="review-author-info">
+                    <h4 id="review-author">Washington Villamarin</h4>
+                    <div class="review-stars" id="review-stars">★★★★★</div>
+                </div>
+            </div>
+            <p class="review-text" id="review-text">
+                Un lugar muy especial para consumir comida rápida y bebidas. Tienen gran variedad de postres y helados, batidos y más. Muy deliciosos. Lo recomiendo.
+            </p>
+        </div>
+
+        <!-- Botón flotante para subir -->
+        <button class="scroll-to-top" id="scroll-to-top" aria-label="Volver arriba">&#9650;</button>
+    </section>
+
+    <!-- VENTANA EMERGENTE (MODAL DESC) -->
+    <div id="desc-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 id="modal-title">Título</h3>
+            <p id="modal-text">Descripción...</p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
